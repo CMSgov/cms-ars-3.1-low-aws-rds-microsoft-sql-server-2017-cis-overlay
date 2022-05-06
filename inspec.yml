@@ -1,0 +1,41 @@
+name: cms-ars-3.1-low-aws-rds-microsoft-sql-server-2017-cis-overlay
+title: cms-ars-3.1-low-aws-rds-microsoft-sql-server-2017-cis-overlay
+maintainer: MITRE SAF
+copyright: MITRE SAF
+copyright_email: saf@groups.mitre.org
+license: Apache-2.0
+summary: "An InSpec Overlay Profile for CMS ARS 3.1 Low to validate an AWS RDS instance of the Microsoft SQL Server 2017 CIS Benchmark"
+version: 1.2.0
+inspec_version: ">= 4.0"
+
+depends:
+- name: aws-rds-microsoft-sql-server-2017-cis-baseline
+  url: https://github.com/mitre/aws-rds-microsoft-sql-server-2017-cis-baseline/archive/v1.2.0.tar.gz
+
+inputs:
+  - name: user
+    description: 'The username MSSQL DB Server'
+    required: true
+    sensitive: true
+
+  - name: password
+    description: 'The password MSSQL DB Server'
+    required: true
+    sensitive: true
+
+  - name: host
+    description: 'The hostname MSSQL DB Server'
+    required: true
+    sensitive: true
+
+  - name: instance
+    description: 'The instance name MSSQL DB Server'
+    required: true
+    sensitive: true
+
+  - name: port
+    description: 'The port used for MSSQL DB Server'
+    type: numeric
+    value: 1433
+    required: true
+    sensitive: true
