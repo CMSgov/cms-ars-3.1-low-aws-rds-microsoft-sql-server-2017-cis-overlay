@@ -1,4 +1,5 @@
 # cms-ars-3.1-low-aws-rds-microsoft-sql-server-2017-cis-overlay
+**CMS’ ISPG (Information Security and Privacy Group) decided to discontinue funding the customization of MITRE’s Security Automation Framework (SAF) for CMS after September 2023. This repo is now in archive mode, but still accessible. For more information about SAF with current links, see https://security.cms.gov/learn/security-automation-framework-saf**
 
 An InSpec Profile Overlay to validate the secure configuration of AWS RDS instance of Microsoft SQL Server 2017 (Express Edition) against [CIS](https://www.cisecurity.org/cis-benchmarks/)'s Benchmark for Microsoft SQL Server 2017 version 1.2.0 tailored for CMS ARS 3.1 for CMS systems categorized as Low.
 
